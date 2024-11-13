@@ -1,0 +1,295 @@
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git init
+Initialized empty Git repository in C:/Users/Time Line ED/Desktop/trabajos programacion/Laboratorio 6/.git/
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git config --globaluser.name "Sergio Andres Hernandez Mirabal"
+error: unknown option `globaluser.name'
+usage: git config list [<file-option>] [<display-option>] [--includes]
+   or: git config get [<file-option>] [<display-option>] [--includes] [--all] [--regexp] [--value=<value>] [--fixed-value] [--default=<default>] <name>
+   or: git config set [<file-option>] [--type=<type>] [--all] [--value=<value>] [--fixed-value] <name> <value>
+   or: git config unset [<file-option>] [--all] [--value=<value>] [--fixed-value] <name>
+   or: git config rename-section [<file-option>] <old-name> <new-name>
+   or: git config remove-section [<file-option>] <name>
+   or: git config edit [<file-option>]
+   or: git config [<file-option>] --get-colorbool <name> [<stdout-is-tty>]
+
+Config file location
+    --[no-]global         use global config file
+    --[no-]system         use system config file
+    --[no-]local          use repository config file
+    --[no-]worktree       use per-worktree config file
+    -f, --[no-]file <file>
+                          use given config file
+    --[no-]blob <blob-id> read config from given blob object
+
+Action
+    --get                 get value: name [<value-pattern>]
+    --get-all             get all values: key [<value-pattern>]
+    --get-regexp          get values for regexp: name-regex [<value-pattern>]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [<value-pattern>]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [<value-pattern>]
+    --unset-all           remove all matches: name [<value-pattern>]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [<default>]
+    --get-colorbool       find the color setting: slot [<stdout-is-tty>]
+
+Display options
+    -z, --[no-]null       terminate values with NUL byte
+    --[no-]name-only      show variable names only
+    --[no-]show-origin    show origin of config (file, standard input, blob, command line)
+    --[no-]show-scope     show scope of config (worktree, local, global, system, command)
+    --[no-]show-names     show config keys in addition to their values
+
+Type
+    -t, --[no-]type <type>
+                          value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    --[no-]default <value>
+                          with --get, use default value when missing entry
+    --[no-]comment <value>
+                          human-readable comment string (# will be prepended as needed)
+    --[no-]fixed-value    use string equality when comparing values to value pattern
+    --[no-]includes       respect include directives on lookup
+
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git config --global user.name "Sergio Andres Hernandez Mirabal"
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git config --global user.email "sergio.hernandez.ttc.246@unilibre.edu.co"
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Sergio Andres Hernandez Mirabal
+user.email=sergio.hernandez.ttc.246@unilibre.edu.co
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git add index.html
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git commit -m "archivo index inicial V01+h1+h2"
+[master (root-commit) 934bbcf] archivo index inicial V01+h1+h2
+ 1 file changed, 15 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git add .
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git commit -m "version 02 +h3"
+[master 56ee36b] version 02 +h3
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git log
+commit 56ee36b9282a793c9a4d894e8401e334e8351480 (HEAD -> master)
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 09:47:43 2024 -0500
+
+    version 02 +h3
+
+commit 934bbcf5c5642b88054b7f9ae7124cc51d754590
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 09:42:03 2024 -0500
+
+    archivo index inicial V01+h1+h2
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git branch
+* master
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git branch rama_1
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git branch
+* master
+  rama_1
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git checkout rama_1
+Switched to branch 'rama_1'
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch rama_1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git add .
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch rama_1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git commit -m "v03rama_1+p|lorem|"
+[rama_1 c9d230d] v03rama_1+p|lorem|
+ 1 file changed, 3 insertions(+)
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git log
+commit c9d230d25bc78075b4a20a202b1e72229417a606 (HEAD -> rama_1)
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 10:01:55 2024 -0500
+
+    v03rama_1+p|lorem|
+
+commit 56ee36b9282a793c9a4d894e8401e334e8351480 (master)
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 09:47:43 2024 -0500
+
+    version 02 +h3
+
+commit 934bbcf5c5642b88054b7f9ae7124cc51d754590
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 09:42:03 2024 -0500
+
+    archivo index inicial V01+h1+h2
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git checkout master
+Switched to branch 'master'
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git merge rama_1
+Updating 56ee36b..c9d230d
+Fast-forward
+ index.html | 3 +++
+ 1 file changed, 3 insertions(+)
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git remote add origin https://github.com/sanhmi/Git-Talento-Tech-.git
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git global --list
+git: 'global' is not a git command. See 'git --help'.
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Sergio Andres Hernandez Mirabal
+user.email=sergio.hernandez.ttc.246@unilibre.edu.co
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git log
+commit c9d230d25bc78075b4a20a202b1e72229417a606 (HEAD -> master, rama_1)
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 10:01:55 2024 -0500
+
+    v03rama_1+p|lorem|
+
+commit 56ee36b9282a793c9a4d894e8401e334e8351480
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 09:47:43 2024 -0500
+
+    version 02 +h3
+
+commit 934bbcf5c5642b88054b7f9ae7124cc51d754590
+Author: Sergio Andres Hernandez Mirabal <sergio.hernandez.ttc.246@unilibre.edu.co>
+Date:   Wed Nov 13 09:42:03 2024 -0500
+
+    archivo index inicial V01+h1+h2
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git remote add origin https://github.com/sanhmi/Git-Talento-Tech-.git
+error: remote origin already exists.
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.06 KiB | 362.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/sanhmi/Git-Talento-Tech-.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\Time Line ED\Desktop\trabajos programacion\Laboratorio 6>
